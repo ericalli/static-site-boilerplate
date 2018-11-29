@@ -1,0 +1,30 @@
+/*--------------------------------------------
+Mixins
+---------------------------------------------*/
+/*--------------------------------------------
+Globals
+---------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+  @media only screen and (max-width: 420px) {
+    html, body {
+      height: auto; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #fff;
+  font-size: 22px;
+  font-family: 'avenirnextw10-regularregular'; }
+  body.show_modal {
+    overflow: hidden; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OytDQUUrQztBQUMvQzs7K0NBRStDO0FBQy9DO0VBQ0UsVUFBVTtFQUNWLFdBQVcsRUFBRTs7QUFFZjtFQUNFLGFBQWEsRUFBRTtFQUNmO0lBQ0U7TUFDRSxhQUFhLEVBQUUsRUFBRTs7QUFFdkI7RUFDRSxVQUFVO0VBQ1YsV0FBVztFQUNYLG9CQUFvQjtFQUNwQixZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDRDQUE0QyxFQUFFO0VBQzlDO0lBQ0UsaUJBQWlCLEVBQUU7O0FBRXZCO0VBQ0Usc0JBQXNCLEVBQUUiLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbk1peGluc1xuLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKi9cbi8qLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1cbkdsb2JhbHNcbi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSovXG4qIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwOyB9XG5cbmh0bWwsIGJvZHkge1xuICBoZWlnaHQ6IDEwMCU7IH1cbiAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA0MjBweCkge1xuICAgIGh0bWwsIGJvZHkge1xuICAgICAgaGVpZ2h0OiBhdXRvOyB9IH1cblxuYm9keSB7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbiAgYmFja2dyb3VuZDogI2Y1ZjVmNTtcbiAgY29sb3I6ICNmZmY7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgZm9udC1mYW1pbHk6ICdhdmVuaXJuZXh0dzEwLXJlZ3VsYXJyZWd1bGFyJzsgfVxuICBib2R5LnNob3dfbW9kYWwge1xuICAgIG92ZXJmbG93OiBoaWRkZW47IH1cblxuYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTsgfVxuIl19 */

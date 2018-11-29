@@ -1,0 +1,38 @@
+/*--------------------------------------------
+Mixins
+---------------------------------------------*/
+$ipad: 768px;
+$iphone: 420px;
+
+@mixin iphone {
+ @media only screen and (max-width: $iphone) {
+   @content;
+ }
+}
+
+@mixin ipad {
+ @media only screen and (max-width: $ipad) {
+   @content;
+ }
+}
+/*--------------------------------------------
+Globals
+---------------------------------------------*/
+* { margin: 0; padding: 0; }
+
+html, body { 
+  height: 100%; 
+  
+  @include iphone {
+    height: auto;
+  }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
