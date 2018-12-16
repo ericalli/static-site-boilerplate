@@ -2,14 +2,15 @@ module.exports = function(grunt) {
 
   // load all tasks
   const sass = require('node-sass');
-  
+
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    // Define project specific configs
+    // Define project configs
     project: {
+      port        : 8000,
       src         : 'src',
       dist        : 'dist',
       html_files  : [
@@ -19,29 +20,28 @@ module.exports = function(grunt) {
         '<%= project.src %>/scss/styles.scss'
       ],
       js_files    : [
-        '<%= project.src %>/js/jquery-3.3.1.js',
-        '<%= project.src %>/js/custom.js'
+        '<%= project.src %>/js/scripts.js'
       ]
     },
-    
+
     // Local web server
     connect: {
       server: {
         options: {
-          port: 8000,
+          port: '<%= project.port %>',
           base: '<%= project.dist %>/',
           livereload: true
         }
       }
     },
-    
+
     // Clean build directory
     clean: {
       dist: [
         '<%= project.dist %>/*',
       ]
     },
-    
+
     // HTML minification
     htmlmin: {
       dev: {
@@ -69,26 +69,26 @@ module.exports = function(grunt) {
     // CSS compilation
     sass: {
       options: {
-        implementation: sass  
+        implementation: sass
       },
       dev: {
         options: {
           style: 'expanded'
         },
-        files: {                   
+        files: {
           '<%= project.dist %>/css/styles.css' : '<%= project.css_files %>'
         }
       },
       dist: {
         options: {
-            style: 'compressed'
+          style: 'compressed'
         },
-        files: {                   
+        files: {
           '<%= project.dist %>/css/styles.css' : '<%= project.css_files %>'
         }
-      } 
+      }
     },
-    
+
     // CSS autoprefixes
     postcss: {
       options: {
@@ -109,7 +109,7 @@ module.exports = function(grunt) {
         src: '<%= project.dist %>/css/styles.css'
       }
     },
-    
+
     // CSS minification
     cssmin: {
       combine: {
@@ -118,39 +118,12 @@ module.exports = function(grunt) {
         }
       }
     },
-    
+
     // JS linting
-    jshint: {
-      options : {
-        node: true,
-        browser: true,
-        esnext: true,
-        bitwise: true,
-        camelcase: true,
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        indent: 2,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        quotmark: single,
-        regexp: true,
-        undef: true,
-        unused: true,
-        strict: true,
-        trailing: false,
-        smarttabs: true,
-        globals : {
-          jQuery: true,
-          Modernizr: true
-        }
-      },
-      all: {
-        src: '<%= project.js_files %>'
-      }
+    eslint: {
+      target: ['<%= project.js_files %>']
     },
-    
+
     // Javascript compilation
     uglify: {
       dev: {
@@ -202,7 +175,27 @@ module.exports = function(grunt) {
         }]
       }
     },
-    
+
+    // Server configs
+    copy: {
+      server: {
+        files: [
+          {
+            expand: true,
+            cwd: 'node_modules/apache-server-configs/dist/',
+            src: '.htaccess',
+            dest: '<%= project.dist %>'
+          },
+          {
+            expand: true,
+            cwd: '<%= project.src %>',
+            src: 'robots.txt',
+            dest: '<%= project.dist %>'
+          },
+        ]
+      }
+    },
+
     // Open server in browser
     open: {
       server: {
@@ -228,37 +221,39 @@ module.exports = function(grunt) {
         tasks: ['uglify:dev']
       }
     }
-    
+
   });
-  
-  // Build for development
+
+  // Task for development
   grunt.registerTask('build:dev', [
     'clean',
-    'htmlmin:dev', 
-    'sass:dev', 
+    'htmlmin:dev',
+    'sass:dev',
     'postcss:dev',
-    'jshint',
-    'uglify:dev', 
-    'imagemin:dev'
+    'eslint',
+    'uglify:dev',
+    'imagemin:dev',
+    'copy'
   ]);
-  
-  // Build for production
+
+  // Task for production
   grunt.registerTask('build:dist', [
     'clean',
-    'htmlmin:dist', 
-    'sass:dist', 
+    'htmlmin:dist',
+    'sass:dist',
     'postcss:dist',
     'cssmin',
-    'jshint',
-    'uglify:dist', 
-    'imagemin:dist'
+    'eslint',
+    'uglify:dist',
+    'imagemin:dist',
+    'copy'
   ]);
-  
-  // Run development server
+
+  // Task for development server
   grunt.registerTask('start', [
-    'build:dev', 
-    'connect', 
-    'watch',
-    'open'
+    'build:dev',
+    'connect',
+    'open',
+    'watch'
   ]);
 };
