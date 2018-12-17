@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-  // load all tasks
+  // Load all tasks
   const sass = require('node-sass');
 
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
@@ -10,18 +10,9 @@ module.exports = function(grunt) {
 
     // Define project configs
     project: {
-      port        : 8000,
-      src         : 'src',
-      dist        : 'dist',
-      html_files  : [
-        '<%= project.src %>/index.html'
-      ],
-      css_files  : [
-        '<%= project.src %>/scss/styles.scss'
-      ],
-      js_files    : [
-        '<%= project.src %>/js/scripts.js'
-      ]
+      port: 8000,
+      src : 'src',
+      dist: 'dist'
     },
 
     // Local web server
@@ -39,6 +30,10 @@ module.exports = function(grunt) {
     clean: {
       dist: [
         '<%= project.dist %>/*',
+      ],
+      js: [
+        '<%= project.src %>/js/*.es5.js',
+        '<%= project.src %>/js/*.min.js'
       ]
     },
 
@@ -48,7 +43,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= project.src %>',
-          src: ['*.html', '*.php'],
+          src: ['*.html'],
           dest: '<%= project.dist %>'
         }]
       },
@@ -76,7 +71,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          '<%= project.dist %>/css/styles.css' : '<%= project.css_files %>'
+          '<%= project.dist %>/css/styles.css' : '<%= project.src %>/scss/styles.scss'
         }
       },
       dist: {
@@ -84,7 +79,7 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          '<%= project.dist %>/css/styles.css' : '<%= project.css_files %>'
+          '<%= project.dist %>/css/styles.css' : '<%= project.src %>/scss/styles.scss'
         }
       }
     },
@@ -119,9 +114,35 @@ module.exports = function(grunt) {
       }
     },
 
-    // JS linting
+    // Javascript linting
     eslint: {
-      target: ['<%= project.js_files %>']
+      target: ['<%= project.src %>/js/*.js']
+    },
+
+    // ES6 transformation
+    babel: {
+      options: {
+        sourceMap: false,
+        presets: ['@babel/preset-env']
+      },
+      dist: {
+        files: [
+          {
+            expand: true,
+            cwd: '<%= project.src %>/js/',
+            src: ['*.es6.js'],
+            dest: '<%= project.src %>/js/',
+            ext: '.es5.js'
+          }
+        ]
+      }
+    },
+
+    concat: {
+      js: {
+        src: ['<%= project.src %>/js/*.js', '!<%= project.src %>/js/*.es6.js'],
+        dest: '<%= project.dist %>/js/scripts.js'
+      }
     },
 
     // Javascript compilation
@@ -134,7 +155,7 @@ module.exports = function(grunt) {
           beautify: true
         },
         files: {
-          '<%= project.dist %>/js/scripts.js' : '<%= project.js_files %>'
+          '<%= project.dist %>/js/scripts.js' : '<%= project.dist %>/js/scripts.js'
         }
       },
       dist: {
@@ -143,7 +164,7 @@ module.exports = function(grunt) {
           mangle: true
         },
         files: {
-          '<%= project.dist %>/js/scripts.js' : '<%= project.js_files %>'
+          '<%= project.dist %>/js/scripts.js' : '<%= project.dist %>/js/scripts.js'
         }
       }
     },
@@ -209,16 +230,16 @@ module.exports = function(grunt) {
         livereload: true,
       },
       html: {
-        files: '<%= project.html_files %>',
+        files: '<%= project.src %>/*.html',
         tasks: ['htmlmin:dev']
       },
       css: {
-        files: '<%= project.css_files %>',
+        files: '<%= project.src %>/scss/*.scss',
         tasks: ['sass:dev', 'postcss:dev']
       },
       uglify: {
-        files: '<%= project.js_files %>',
-        tasks: ['uglify:dev']
+        files: '<%= project.src %>/js/*.js',
+        tasks: ['eslint', 'babel', 'concat:js', 'uglify:dev', 'clean:js']
       }
     }
 
@@ -226,25 +247,31 @@ module.exports = function(grunt) {
 
   // Task for development
   grunt.registerTask('build:dev', [
-    'clean',
+    'clean:dist',
     'htmlmin:dev',
     'sass:dev',
     'postcss:dev',
     'eslint',
+    'babel',
+    'concat:js',
     'uglify:dev',
+    'clean:js',
     'imagemin:dev',
     'copy'
   ]);
 
   // Task for production
   grunt.registerTask('build:dist', [
-    'clean',
+    'clean:dist',
     'htmlmin:dist',
     'sass:dist',
     'postcss:dist',
     'cssmin',
     'eslint',
+    'babel',
+    'concat:js',
     'uglify:dist',
+    'clean:js',
     'imagemin:dist',
     'copy'
   ]);
