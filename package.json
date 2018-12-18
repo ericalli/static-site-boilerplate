@@ -1,11 +1,23 @@
 {
   "name": "static-site-boilerplate-grunt",
+  "homepage": "http://staticsiteboilerplate.com",
+  "description": "A modern boilerplate for static website development",
+  "keywords": ["html5","es6","frontend","sass","static","boilerplate"],
   "version": "1.0.0",
+  "bugs": {
+    "url": "https://github.com/ericalli/static-site-boilerplate-grunt/issues"
+  },
+  "license": "MIT",
   "scripts": {
     "start": "grunt start",
     "build:dev": "grunt build:dev",
     "build:dist": "grunt build:dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericalli/static-site-boilerplate-grunt.git"
+  },
+  "author": "Eric Alli",
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.0",
