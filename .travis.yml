@@ -1,0 +1,7 @@
+language: node_js
+install:
+  - npm install
+script:
+  - npm run start
+  - npm run build:dev
+  - npm run build:dist

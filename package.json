@@ -2,7 +2,14 @@
   "name": "static-site-boilerplate",
   "homepage": "http://staticsiteboilerplate.com",
   "description": "A modern boilerplate for static website development",
-  "keywords": ["html5","es6","frontend","sass","static","boilerplate"],
+  "keywords": [
+    "html5",
+    "es6",
+    "frontend",
+    "sass",
+    "static",
+    "boilerplate"
+  ],
   "version": "1.0.0",
   "bugs": {
     "url": "https://github.com/ericalli/static-site-boilerplate/issues"
@@ -42,6 +49,7 @@
     "grunt-open": "^0.2.3",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.0.2",
+    "load-grunt-configs": "^1.0.0",
     "load-grunt-tasks": "^4.0.0",
     "node-sass": "^4.10.0"
   }
