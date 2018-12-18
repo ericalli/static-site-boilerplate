@@ -2,6 +2,11 @@
 [![Build Status](https://travis-ci.org/ericalli/static-site-boilerplate.svg?branch=master)](https://travis-ci.org/ericalli/static-site-boilerplate)
 [![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
 
+Static Site Boilerplate is a better workflow for building modern static websites. Automated build processes, a local development server, production minification and optimizations, and the latest standards for static websites.
+
+* Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
+* Documentation: [https://docs.staticsiteboilerplate.com/](https://docs.staticsiteboilerplate.com/)
+
 ## Features
 
 * Full support for HTML5, JavaScript \(Vanilla and ES6\) and CSS \(Sass and PostCSS\)
