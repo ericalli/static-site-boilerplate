@@ -1,4 +1,5 @@
 # Static Site Boilerplate
+[![Build Status](https://travis-ci.org/ericalli/static-site-boilerplate.svg?branch=master)](https://travis-ci.org/ericalli/static-site-boilerplate)
 
 ## Features
 
