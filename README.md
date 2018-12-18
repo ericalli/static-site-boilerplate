@@ -1,10 +1,3 @@
----
-description: >-
-  A better workflow for building modern static websites. Automated build
-  processes, a local development server, production minification and
-  optimizations, and the latest standards for static websites.
----
-
 # Static Site Boilerplate
 
 ## Features
