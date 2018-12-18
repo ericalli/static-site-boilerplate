@@ -1,1 +1,2 @@
-# static-site-boilerplate-grunt
+# Initial page
+
