@@ -1,7 +1,16 @@
 language: node_js
+
+node_js:
+  - node
+  - lts/*
+
 install:
   - npm install
+
 script:
   - npm run start
   - npm run build:dev
   - npm run build:dist
+
+dist: trusty
+sudo: false
