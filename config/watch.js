@@ -13,5 +13,9 @@ module.exports = {
   uglify: {
     files: '<%= project.src %>/js/*.js',
     tasks: ['eslint', 'babel', 'concat:js', 'uglify:dev', 'clean:js']
+  },
+  img: {
+    files: '<%= project.src %>/img/*',
+    tasks: ['imagemin:dev']
   }
 };
