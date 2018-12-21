@@ -5,6 +5,8 @@ node_js:
   - lts/*
 
 install:
+  - npm run lint:styles
+  - npm run lint:javascripts
   - npm install
 
 script:
