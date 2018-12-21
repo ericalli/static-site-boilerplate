@@ -8,7 +8,6 @@ install:
   - npm install
 
 script:
-  - npm run build:dev
   - npm run build:dist
 
 dist: trusty
