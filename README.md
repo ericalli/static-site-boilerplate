@@ -17,7 +17,7 @@ Static Site Boilerplate is a better workflow for building modern static websites
 * **Image Optimization:** Optimizes images for loading speed
 * **Favicon Generation:** Automatically generates all favicons for Web, Apple and Android devices from one image file.
 * **Code Linting:** Full support for JavaScript (ESLint) and CSS (StyleLint) linting
-* **Setup Wizard:** Optionally instantly install helpful libraries and snippets including:
+* **Setup Wizard:** Optionally install helpful libraries and snippets including:
   * CSS Resets: `normalize.css` `reset.css` or `sanitize.css`
   * jQuery
   * Google Analytics
