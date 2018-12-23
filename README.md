@@ -1,3 +1,5 @@
+![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)
+
 # Static Site Boilerplate
 [![Build Status](https://travis-ci.org/ericalli/static-site-boilerplate.svg?branch=master)](https://travis-ci.org/ericalli/static-site-boilerplate)
 [![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
@@ -9,13 +11,18 @@ Static Site Boilerplate is a better workflow for building modern static websites
 
 ## Features
 
-* Full support for HTML5, JavaScript \(Vanilla and ES6\) and CSS \(Sass and PostCSS\)
-* Local development server with live reloading
-* CSS and JavaScript transpilation, bundling, autoprefixing, and minification
-* Image minification and optimization
-* Code linting for JavaScript
-* Makes no assumptions on how you should write your code
-* Built-in support for deployment to Netlify 
+* **Modern Technologies:** Full support for HTML5, JavaScript (Vanilla and ES6) and CSS (Sass and PostCSS)
+* **Built-in Server:** Local development server with hot reloading
+* **Performance Tuning:** CSS and JavaScript transpilation, bundling, autoprefixing, and minification
+* **Image Optimization:** Optimizes images for loading speed
+* **Favicon Generation:** Automatically generates all favicons for Web, Apple and Android devices from one image file.
+* **Code Linting:** Full support for JavaScript (ESLint) and CSS (StyleLint) linting
+* Setup Wizard: Optionally instantly install helpful libraries and snippets including:
+  * CSS Resets: `normalize.css` `reset.css` or `sanitize.css`
+  * jQuery
+  * Google Analytics
+* **Cutting Edge:** Uses Webpack for processing and bundling your code 
+* **Deployment:** Built-in support for deployment to Netlify 
 
 ## Browser Support
 
