@@ -24,7 +24,8 @@
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.dev.js",
     "setup": "node ./setup.js",
-    "lint:javascripts": "./node_modules/.bin/eslint \"src/**/*.js\"",
+    "postinstall": "node ./setup.js",
+    "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build:dist": "webpack --config ./config/webpack.config.prod.js"
   },

@@ -5,11 +5,11 @@ node_js:
   - lts/*
 
 install:
-  - npm run lint:styles
-  - npm run lint:javascripts
   - npm install
 
 script:
+  - npm run lint:styles
+  - npm run lint:js
   - npm run build:dist
 
 dist: trusty
