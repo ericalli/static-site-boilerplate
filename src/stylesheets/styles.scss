@@ -1,7 +1,2 @@
-html,
-body { height: 100%; }
-
-body {
-  background: url('../images/background.jpg') no-repeat;
-  background-size: contain;
-}
+// Load CSS Reset from NPM
+@import "~normalize.css"

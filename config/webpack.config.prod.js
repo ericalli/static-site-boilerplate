@@ -16,7 +16,9 @@ module.exports = merge(common, {
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
       cssProcessor: cssnano,
-      cssProcessorOptions: { discardComments: { removeAll: true } },
+      cssProcessorPluginOptions: {
+        preset: ['default', { discardComments: { removeAll: true } }],
+      },
       canPrint: true,
     }),
   ]

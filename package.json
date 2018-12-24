@@ -1,8 +1,29 @@
 {
   "name": "static-site-boilerplate",
+  "description": "A modern boilerplate for static website development",
   "version": "1.0.0",
+  "homepage": "http://staticsiteboilerplate.com",
+  "author": "Eric Alli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericalli/static-site-boilerplate.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericalli/static-site-boilerplate/issues"
+  },
+  "keywords": [
+    "html5",
+    "es6",
+    "frontend",
+    "sass",
+    "static",
+    "boilerplate",
+    "webpack"
+  ],
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.dev.js",
+    "setup": "node ./setup.js",
     "lint:javascripts": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build:dist": "webpack --config ./config/webpack.config.prod.js"
@@ -20,6 +41,7 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-import": "^2.14.0",
     "file-loader": "^2.0.0",
+    "glob": "^7.1.3",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "image-webpack-loader": "^4.6.0",
@@ -39,6 +61,11 @@
     "webpackbar": "^3.1.4"
   },
   "dependencies": {
+    "enquirer": "^2.2.0",
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.1",
+    "reset-css": "^4.0.1",
+    "sanitize.css": "^8.0.0",
     "webpack-dev-server": "^3.1.10"
   }
 }
