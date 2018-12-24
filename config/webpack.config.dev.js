@@ -6,7 +6,7 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-eval-source-map',
   devServer: {
-    contentBase: 'src',
+    contentBase: './../src',
     watchContentBase: true,
     hot: true,
     open: true,
