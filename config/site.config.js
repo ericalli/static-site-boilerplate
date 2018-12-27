@@ -16,6 +16,9 @@ const config = {
   // Source file for favicon generation. 512x512px recommended.
   favicon: path.join(ROOT, '/src/images/favicon.png'),
 
+  // Google Analytics tracking ID
+  googleAnalyticsUA: 'UA-XXXXX-Y',
+
   // Local development URL
   dev_host: 'localhost',
 
