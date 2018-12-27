@@ -13,7 +13,6 @@ module.exports = {
     path: path.join(config.root, config.paths.dist),
     filename: '[name].[hash].js',
   },
-  target: 'node',
   mode: ['production', 'development'].includes(config.env)
     ? config.env
     : 'production',
