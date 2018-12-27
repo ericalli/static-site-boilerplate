@@ -1,10 +1,9 @@
-![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)
-
 # Static Site Boilerplate
 [![Build Status](https://travis-ci.org/ericalli/static-site-boilerplate.svg?branch=master)](https://travis-ci.org/ericalli/static-site-boilerplate)
 [![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Static Site Boilerplate is a better workflow for building modern static websites. Automated build processes, a local development server, production minification and optimizations, and the latest standards for static websites.
+![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)
 
 * Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
 * Documentation: [https://docs.staticsiteboilerplate.com/](https://docs.staticsiteboilerplate.com/)
@@ -34,6 +33,23 @@ Static Site Boilerplate is a better workflow for building modern static websites
 * Safari _\(latest 2\)_
 
 _This  is fully dependent on your code and doesn't mean that Static Site Boilerplate won't work in older browsers, just that we'll ensure compatibility with the ones mentioned above._
+
+## Support & Contributing
+
+For general questions about Static Site Boilerplate, tweet at [@ericalli].
+
+Anyone is welcome to contribute. If you decide to get involved, please take a moment to review the following:
+
+* [Bug reports](.github/CONTRIBUTING.md#bugs)
+* [Feature requests](.github/CONTRIBUTING.md#features)
+
+
+## Author
+
+**Eric Alli**
+
+-   Website: <http://www.ericalli.com/>
+-   Github: <https://github.com/ericalli/>
 
 ## License
 
