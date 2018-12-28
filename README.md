@@ -37,7 +37,7 @@ _This  is fully dependent on your code and doesn't mean that Static Site Boilerp
 
 ## Support & Contributing
 
-For general questions about Static Site Boilerplate, tweet at [@ericalli](https:twitter.com/ericalli).
+For general questions about Static Site Boilerplate, tweet at [@ericalli](https://twitter.com/ericalli).
 
 Anyone is welcome to contribute. If you decide to get involved, please take a moment and check out the following:
 
