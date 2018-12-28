@@ -22,7 +22,7 @@
   * jQuery
   * Google Analytics
 * **Cutting Edge:** Uses Webpack for processing and bundling your code 
-* **Deployment:** Built-in support for deployment to Netlify 
+* **Deployment:** Built-in support for deployment via FTP or Netlify 
 
 ## Browser Support
 
