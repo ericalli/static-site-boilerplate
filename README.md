@@ -16,6 +16,7 @@
 * **Image Optimization:** Optimizes images for loading speed
 * **Favicon Generation:** Automatically generates all favicons for Web, Apple and Android devices from one image file
 * **Code Linting:** Full support for JavaScript (ESLint) and CSS (StyleLint) linting
+* **Sitemaps & Robots.txt Generation:** Automatically generates a sitemap.xml and robots.txt files
 * **Setup Wizard:** Optionally install helpful libraries and snippets including:
   * CSS Resets: `normalize.css` `reset.css` or `sanitize.css`
   * jQuery
@@ -38,7 +39,7 @@ _This  is fully dependent on your code and doesn't mean that Static Site Boilerp
 
 For general questions about Static Site Boilerplate, tweet at [@ericalli](https:twitter.com/ericalli).
 
-Anyone is welcome to contribute. If you decide to get involved, please take a moment to review the following:
+Anyone is welcome to contribute. If you decide to get involved, please take a moment and check out the following:
 
 * [Bug reports](.github/CONTRIBUTING.md#bugs)
 * [Feature requests](.github/CONTRIBUTING.md#features)
