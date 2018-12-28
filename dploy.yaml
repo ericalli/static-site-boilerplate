@@ -1,0 +1,9 @@
+default:
+  host: "ftp.yourwebsite.com"
+  user: "username"
+  pass: "password"
+  path:
+    local: "dist/"
+    remote: "public_html/"
+  include:
+    "dist/**/*": "/"
