@@ -5,7 +5,7 @@ node_js:
   - lts/*
 
 install:
-  - npm install
+  - SKIP_SETUP=true npm install
 
 script:
   - npm run lint:styles

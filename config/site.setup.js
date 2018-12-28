@@ -6,6 +6,8 @@ const figlet = require('figlet');
 
 const { prompt } = require('enquirer');
 
+const skip_setup = process.env.SKIP_SETUP || false;
+
 async function runSetup() {
   clear();
   console.log(
@@ -92,4 +94,6 @@ async function runSetup() {
   }
 };
 
-runSetup();
+if (!skip_setup) {
+  runSetup();
+}
