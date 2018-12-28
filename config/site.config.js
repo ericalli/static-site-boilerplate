@@ -13,11 +13,11 @@ const config = {
   // Your website's URL, used for sitemap
   site_url: 'http://staticsiteboilerplate.com',
 
-  // Source file for favicon generation. 512x512px recommended.
-  favicon: path.join(ROOT, '/src/images/favicon.png'),
-
   // Google Analytics tracking ID
   googleAnalyticsUA: 'UA-XXXXX-Y',
+
+  // Source file for favicon generation. 512x512px recommended.
+  favicon: path.join(ROOT, '/src/images/favicon.png'),
 
   // Local development URL
   dev_host: 'localhost',
