@@ -16,7 +16,7 @@
 * **Image Optimization:** Optimizes images for loading speed
 * **Favicon Generation:** Automatically generates all favicons for Web, Apple and Android devices from one image file
 * **Code Linting:** Full support for JavaScript (ESLint) and CSS (StyleLint) linting
-* **Sitemaps & Robots.txt Generation:** Automatically generates a sitemap.xml and robots.txt files
+* **Sitemap & Robots.txt Generation:** Automatically generates a sitemap.xml and robots.txt files
 * **Setup Wizard:** Optionally install helpful libraries and snippets including:
   * CSS Resets: `normalize.css` `reset.css` or `sanitize.css`
   * jQuery
