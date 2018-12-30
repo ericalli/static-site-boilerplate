@@ -8,7 +8,21 @@
 * Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
 * Documentation: [https://docs.staticsiteboilerplate.com/](https://docs.staticsiteboilerplate.com/)
 
-## Features
+## Installation
+
+```bash
+git clone https://github.com/ericalli/static-site-boilerplate
+ ```
+ 
+ ```bash
+cd static-site-boilerplate
+ ```
+ 
+ ```bash
+rm -rf .git && git init
+ ```
+ 
+ ## Features
 
 * **Modern Technologies:** Full support for HTML5, JavaScript (Vanilla and ES6) and CSS (Sass and PostCSS)
 * **Built-in Server:** Local development server with hot reloading
