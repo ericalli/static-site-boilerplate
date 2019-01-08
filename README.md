@@ -3,7 +3,7 @@
 [![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-[![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)](https://github.com/ericalli/static-site-boilerplate/releases/tag/v1.0.0-beta.1)
+[![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)](https://github.com/ericalli/static-site-boilerplate/releases/latest)
 
 * Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
 * Documentation: [https://docs.staticsiteboilerplate.com/](https://docs.staticsiteboilerplate.com/)
