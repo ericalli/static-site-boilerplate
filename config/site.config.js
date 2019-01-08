@@ -1,7 +1,11 @@
 const path = require('path');
 const fs = require('fs');
 
-const ROOT = process.env.PWD;
+let ROOT = process.env.PWD;
+
+if (!ROOT) {
+  ROOT = process.cwd();
+}
 
 const config = {
   // Your website's name, used for favicon meta tags
