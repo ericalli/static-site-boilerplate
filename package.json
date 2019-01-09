@@ -29,7 +29,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
     "start:dist": "cross-env NODE_ENV=production webpack-dev-server --config ./config/webpack.config.js && http-server ./dist -o",
-    "setup": "node ./setup.js",
+    "setup": "node ./config/site.setup.js",
     "postinstall": "node ./config/site.setup.js",
     "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
