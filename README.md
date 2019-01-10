@@ -58,8 +58,8 @@ For general questions about Static Site Boilerplate, tweet at [@ericalli](https:
 
 Anyone is welcome to contribute. If you decide to get involved, please take a moment and check out the following:
 
-* [Bug reports](.github/CONTRIBUTING.md#bugs)
-* [Feature requests](.github/CONTRIBUTING.md#features)
+* [Bug reports](.github/ISSUE_TEMPLATE/bug_report.md)
+* [Feature requests](.github/ISSUE_TEMPLATE/feature_request.md)
 
 
 ## Author
