@@ -3,6 +3,9 @@
 [![devDependency Status](https://david-dm.org/ericalli/static-site-boilerplate/dev-status.svg)](https://david-dm.org/ericalli/static-site-boilerplate?type=dev)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+
+**Discuss it on [Product Hunt](https://www.producthunt.com/posts/static-site-boilerplate) 🦄**
+
 [![Static Site Boilerplate](http://staticsiteboilerplate.com/externals/github.png)](https://github.com/ericalli/static-site-boilerplate/releases/latest)
 
 * Homepage: [http://staticsiteboilerplate.com/](http://staticsiteboilerplate.com//)
