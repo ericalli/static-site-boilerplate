@@ -16,7 +16,7 @@ module.exports = {
   },
   mode: ['production', 'development'].includes(config.env)
     ? config.env
-    : 'production',
+    : 'development',
   devtool: 'cheap-eval-source-map',
   devServer: {
     contentBase: path.join(config.root, config.paths.src),
