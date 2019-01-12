@@ -20,7 +20,7 @@ const config = {
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',
 
-  // The viewport meta tag added to you HTML page's <head> tag
+  // The viewport meta tag added to your HTML page's <head> tag
   viewport: 'width=device-width,minimum-scale=1,maximum-scale=1',
 
   // Source file for favicon generation. 512x512px recommended.
