@@ -139,7 +139,7 @@ module.exports = [
   config.env === 'production' && optimizeCss,
   config.env === 'production' && robots,
   config.env === 'production' && sitemap,
-  google,
+  config.googleAnalyticsUA && google,
   webpackBar,
   config.env === 'development' && hmr,
 ].filter(Boolean);

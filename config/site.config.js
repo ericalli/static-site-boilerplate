@@ -17,8 +17,8 @@ const config = {
   // Your website's URL, used for sitemap
   site_url: 'http://staticsiteboilerplate.com',
 
-  // Google Analytics tracking ID
-  googleAnalyticsUA: 'UA-XXXXX-Y',
+  // Google Analytics tracking ID (leave blank to disable)
+  googleAnalyticsUA: '',
 
   // Source file for favicon generation. 512x512px recommended.
   favicon: path.join(ROOT, '/src/images/favicon.png'),
