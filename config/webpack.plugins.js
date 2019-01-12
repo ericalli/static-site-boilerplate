@@ -13,7 +13,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const RobotstxtPlugin = require('robotstxt-webpack-plugin').default;
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
-// const GoogleAnalyticsPlugin = require('html-webpack-google-analytics-plugin');
 
 const config = require('./site.config');
 
@@ -67,7 +66,7 @@ const generateHTMLPlugins = () => glob.sync('./src/**/*.html').map((dir) => {
     filename,
     template: path.join(config.root, config.paths.src, filename),
     meta: {
-      viewport: 'width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=no',
+      viewport: config.viewport,
     },
   });
 });
