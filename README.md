@@ -63,6 +63,12 @@ Anyone is welcome to contribute. If you decide to get involved, please take a mo
 * [Feature requests](.github/ISSUE_TEMPLATE/feature_request.md)
 
 
+## Sponsors
+
+[**Become a sponsor**](https://opencollective.com/static-site-boilerplate) and get your company in front of thousands of engaged front end developers and support this project!
+
+[![Become a sponsor](https://opencollective.com/static-site-boilerplate/tiers/backer.svg?avatarHeight=64)](https://opencollective.com/static-site-boilerplate)
+
 ## Author
 
 **Eric Alli**
