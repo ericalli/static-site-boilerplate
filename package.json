@@ -67,7 +67,7 @@
     "sass-loader": "^7.1.0",
     "sitemap-webpack-plugin": "^0.6.0",
     "style-loader": "^0.23.1",
-    "stylelint": "^8.3.0",
+    "stylelint": "^8.3.1",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-scss": "^3.4.3",
     "stylelint-webpack-plugin": "^0.10.5",
