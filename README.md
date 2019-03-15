@@ -67,7 +67,7 @@ Anyone is welcome to contribute. If you decide to get involved, please take a mo
 
 [**Become a sponsor**](https://opencollective.com/static-site-boilerplate) and get your company in front of thousands of engaged front end developers and support this project!
 
-[![Become a sponsor](https://opencollective.com/static-site-boilerplate/tiers/backer.svg?avatarHeight=64)](https://opencollective.com/static-site-boilerplate)
+[![Become a sponsor](https://opencollective.com/static-site-boilerplate/tiers/backer.svg?avatarHeight=64)](https://opencollective.com/static-site-boilerplate) [![Join the chat at https://gitter.im/ericalli/static-site-boilerplate](https://badges.gitter.im/ericalli/static-site-boilerplate.svg)](https://gitter.im/ericalli/static-site-boilerplate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Author
 
