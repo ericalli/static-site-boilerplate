@@ -16,7 +16,7 @@ const html = {
 
 // Javascript loaders
 const js = {
-  test: /\.js(x)$/,
+  test: /\.js(x)?$/,
   exclude: /node_modules/,
   use: [
     {
