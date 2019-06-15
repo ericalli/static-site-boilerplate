@@ -124,12 +124,13 @@ const images = {
 
 // Font loaders
 const fonts = {
-  test: /\.(woff|woff2|eot|ttf|otf)$/,
+  test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
+  exclude: /images/,
   use: [
     {
       loader: 'file-loader',
       query: {
-        name: '[name].[ext]',
+        name: '[name].[hash].[ext]',
         outputPath: 'fonts/',
       },
     },
