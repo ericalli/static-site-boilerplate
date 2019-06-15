@@ -60,7 +60,9 @@ const paths = [];
 const generateHTMLPlugins = () => glob.sync('./src/**/*.html').map((dir) => {
   const filename = path.basename(dir);
 
-  paths.push(filename);
+  if (filename !== '404.html') {
+    paths.push(filename);
+  }
 
   return new HTMLWebpackPlugin({
     filename,
