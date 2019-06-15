@@ -137,6 +137,20 @@ const fonts = {
   ],
 };
 
+// Video
+const videos = {
+  test: /\.(mp4|webm)$/,
+  use: [
+    {
+      loader: 'file-loader',
+      query: {
+        name: '[name].[hash].[ext]',
+        outputPath: 'images/',
+      },
+    },
+  ],
+};
+
 module.exports = [
   html,
   js,
