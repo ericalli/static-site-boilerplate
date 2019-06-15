@@ -117,7 +117,7 @@ const imageLoader = {
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
   use: [
-    'file-loader?name=images/[name].[ext]?[hash]',
+    'file-loader?name=images/[name].[hash].[ext]',
     config.env === 'production' ? imageLoader : null,
   ].filter(Boolean),
 };
