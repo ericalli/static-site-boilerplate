@@ -1,4 +1,5 @@
 /* eslint-disable */
+const path = require('path');
 const fs = require('fs');
 const chalk = require('chalk');
 const clear = require('clear');
@@ -7,6 +8,12 @@ const figlet = require('figlet');
 const { prompt } = require('enquirer');
 
 const skip_setup = process.env.SKIP_SETUP || false;
+
+let ROOT = process.env.PWD;
+
+if (!ROOT) {
+  ROOT = process.cwd();
+}
 
 async function runSetup() {
   clear();
@@ -70,7 +77,7 @@ async function runSetup() {
       data = data.replace(/googleAnalyticsUA: '.*?'/g, `googleAnalyticsUA: '${questions.google_analytics}'`);
     }
 
-    fs.writeFile('./config/site.config.js', data, 'utf8', (err) => { });
+    fs.writeFile(path.join(ROOT, '/config/site.config.js'), data, 'utf8', (err) => { });
   });
 
   // Add CSS reset to stylesheet
@@ -79,7 +86,7 @@ async function runSetup() {
       '// Load CSS Reset from NPM\n'
       + '@import "~' + questions.cssreset + '"\n';
 
-    fs.writeFile('./../src/stylesheets/styles.scss', cssContent, (err) => {});
+    fs.writeFile(path.join(ROOT, '/src/stylesheets/styles.scss'), cssContent, (err) => {});
   }
 
   // Add jQuery to scripts
@@ -90,7 +97,7 @@ async function runSetup() {
       + 'window.jQuery = $;\n'
       + 'window.$ = $;\n';
 
-    fs.writeFile('./../src/javascripts/scripts.js', jsContent, (err) => {});
+    fs.writeFile(path.join(ROOT, '/src/javascripts/scripts.js'), jsContent, (err) => {});
   }
 };
 
