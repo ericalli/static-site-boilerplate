@@ -10,6 +10,9 @@ const html = {
   use: [
     {
       loader: 'html-loader',
+      options: {
+        interpolate: true,
+      },
     },
   ],
 };
@@ -116,6 +119,7 @@ const imageLoader = {
 
 const images = {
   test: /\.(gif|png|jpe?g|svg)$/i,
+  exclude: /fonts/,
   use: [
     'file-loader?name=images/[name].[hash].[ext]',
     config.env === 'production' ? imageLoader : null,
@@ -137,7 +141,7 @@ const fonts = {
   ],
 };
 
-// Video
+// Video loaders
 const videos = {
   test: /\.(mp4|webm)$/,
   use: [
@@ -159,4 +163,5 @@ module.exports = [
   less,
   images,
   fonts,
+  videos,
 ];
