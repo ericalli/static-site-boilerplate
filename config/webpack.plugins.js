@@ -117,7 +117,7 @@ class GoogleAnalyticsPlugin {
       HTMLWebpackPlugin.getHooks(compilation).beforeEmit.tapAsync(
         'GoogleAnalyticsPlugin',
         (data, cb) => {
-          data.html = data.html.replace('</head>', `</head>${CODE.replace('{{ID}}', this.id) }`);
+          data.html = data.html.replace('</head>', `${CODE.replace('{{ID}}', this.id) }</head>`);
           cb(null, data);
         },
       );
