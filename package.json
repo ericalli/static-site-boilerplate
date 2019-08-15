@@ -1,7 +1,7 @@
 {
   "name": "static-site-boilerplate",
   "description": "A modern boilerplate for static website development",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "homepage": "http://staticsiteboilerplate.com",
   "author": {
     "name": "Eric Alli",
