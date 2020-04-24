@@ -72,7 +72,7 @@ Anyone is welcome to contribute. If you decide to get involved, please take a mo
 
 ## Author
 
-**Eric Alli**
+**Tatiana Polyakova**
 
 -   Website: <http://www.ericalli.com/>
 -   Github: <https://github.com/ericalli/>
