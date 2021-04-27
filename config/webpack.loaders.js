@@ -115,7 +115,7 @@ const imageLoader = {
 };
 
 const images = {
-  test: /\.(gif|png|jpe?g|svg)$/i,
+  test: /\.(gif|png|jpe?g|webp|svg)$/i,
   exclude: /fonts/,
   use: [
     'file-loader?name=images/[name].[hash].[ext]',
