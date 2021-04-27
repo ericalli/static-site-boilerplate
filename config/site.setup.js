@@ -40,7 +40,7 @@ async function runSetup() {
       type: 'input',
       name: 'site_url',
       message: 'What is the live URL for your website?',
-      hint: 'http://yourwebsite.com'
+      initial: 'https://yourwebsite.com'
     },
     {
       type: 'input',

@@ -80,7 +80,7 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
-    "enquirer": "^2.3.1",
+    "enquirer": "^2.3.6",
     "figlet": "^1.2.3",
     "ftp-deploy": "^2.4.1",
     "jquery": "^3.6.0",
